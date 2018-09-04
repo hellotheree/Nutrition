@@ -18,9 +18,7 @@ body
 }
 img
 {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    
 }
 
 /* Cntering div*/
@@ -62,4 +60,26 @@ nav ul
 {
     background: rgba(0,0, 0 ,0.5);
     width: 100%;
+}
+
+img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
 }
